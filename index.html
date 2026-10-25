@@ -1,0 +1,776 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Health & Hygiene Hub provides accessible information about hygiene practices, disease prevention and healthcare resources.">
+
+    <title>Health & Hygiene Hub | Healthy Living Starts Here</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#home" class="logo">
+                <span class="logo-icon">✚</span>
+                <span>Health<span class="logo-highlight">&</span>Hygiene</span>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#hygiene">Hygiene</a>
+                <a href="#skin">Skin Health</a>
+                <a href="#prevention">Prevention</a>
+                <a href="#videos">Videos</a>
+                <a href="#resources">Healthcare</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO WITH VIDEO BACKGROUND -->
+        <section class="hero" id="home">
+            <video class="hero-video" autoplay muted loop playsinline
+                poster="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=1800&q=85"
+                aria-hidden="true" tabindex="-1">
+                <source src="https://videos.pexels.com/video-files/5505114/5505114-hd_1920_1080_25fps.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay" aria-hidden="true"></div>
+
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <span class="hero-badge">🛡️ Your everyday health guide</span>
+                    <h1>Small habits.<span>Better health.</span></h1>
+                    <p>
+                        Learn simple hygiene practices, understand ways to reduce
+                        the risk of common infections, and find healthcare resources
+                        around Nagpur.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#hygiene" class="btn btn-primary">Explore Hygiene</a>
+                        <a href="#resources" class="btn btn-secondary">Find Healthcare</a>
+                    </div>
+
+                    <div class="hero-note">
+                        ✓ Simple information <span></span>
+                        ✓ Reliable sources <span></span>
+                        ✓ Easy to understand
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="health-card main-health-card">
+                        <div class="health-icon">🧼</div>
+                        <h3>Clean Hands</h3>
+                        <p>One of the simplest ways to help prevent the spread of germs.</p>
+                        <div class="mini-progress"><span style="width:82%"></span></div>
+                        <small>Make hand hygiene a daily habit</small>
+                    </div>
+
+                    <div class="floating-card floating-card-1">💧 Clean Water</div>
+                    <div class="floating-card floating-card-2">🥗 Safe Food</div>
+                    <div class="floating-card floating-card-3">💉 Vaccination</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EMERGENCY BANNER -->
+        <section class="emergency-section">
+            <div class="container">
+                <div class="emergency-box">
+                    <div class="emergency-info">
+                        <div class="emergency-icon">🚨</div>
+                        <div>
+                            <h3>Emergency?</h3>
+                            <p>For urgent medical emergencies, contact emergency services immediately.</p>
+                        </div>
+                    </div>
+                    <div class="emergency-buttons">
+                        <a href="tel:112" class="emergency-btn emergency-dark">📞 Call 112</a>
+                        <a href="tel:108" class="emergency-btn emergency-red">🚑 Call 108</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- QUICK ACCESS -->
+        <section class="quick-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span>QUICK ACCESS</span>
+                    <h2>Start with the basics</h2>
+                    <p>Practical health information for everyday life.</p>
+                </div>
+
+                <div class="quick-grid">
+                    <a href="#hygiene" class="quick-card">
+                        <div class="quick-icon">🧼</div>
+                        <h3>Hygiene Practices</h3>
+                        <p>Learn everyday habits that support personal hygiene.</p>
+                        <span>Learn more →</span>
+                    </a>
+                    <a href="#prevention" class="quick-card">
+                        <div class="quick-icon">🦠</div>
+                        <h3>Disease Prevention</h3>
+                        <p>Understand practical ways to reduce infection risks.</p>
+                        <span>Explore →</span>
+                    </a>
+                    <a href="#resources" class="quick-card">
+                        <div class="quick-icon">🏥</div>
+                        <h3>Healthcare Resources</h3>
+                        <p>Find useful healthcare contacts and facilities.</p>
+                        <span>Find care →</span>
+                    </a>
+                    <a href="#faq" class="quick-card">
+                        <div class="quick-icon">❓</div>
+                        <h3>Common Questions</h3>
+                        <p>Get quick answers to everyday hygiene questions.</p>
+                        <span>View FAQ →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONAL HYGIENE -->
+        <section class="section light-section" id="hygiene">
+            <div class="container">
+                <div class="section-heading">
+                    <span>PERSONAL HYGIENE</span>
+                    <h2>Healthy habits begin <span>with you.</span></h2>
+                    <p>Good hygiene can help reduce the spread of germs and support your overall wellbeing.</p>
+                </div>
+
+                <div class="hygiene-grid">
+                    <article class="info-card">
+                        <div class="card-number">01</div>
+                        <div class="big-card-icon">🧼</div>
+                        <h3>Wash Your Hands</h3>
+                        <p>Clean your hands at important times, especially before eating and after using the toilet.</p>
+                        <button class="text-btn" data-modal="handModal">See proper steps →</button>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-number">02</div>
+                        <div class="big-card-icon">🪥</div>
+                        <h3>Oral Hygiene</h3>
+                        <p>Maintain regular oral care by brushing your teeth and keeping your mouth clean.</p>
+                        <button class="text-btn" data-modal="oralModal">Helpful tips →</button>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-number">03</div>
+                        <div class="big-card-icon">🚿</div>
+                        <h3>Body Hygiene</h3>
+                        <p>Regular bathing, clean clothes and clean personal items can help support personal cleanliness.</p>
+                        <button class="text-btn" data-modal="bodyModal">Daily routine →</button>
+                    </article>
+
+                    <article class="info-card">
+                        <div class="card-number">04</div>
+                        <div class="big-card-icon">👕</div>
+                        <h3>Clean Clothes</h3>
+                        <p>Keep clothes, towels and frequently used personal items clean and dry.</p>
+                        <button class="text-btn" data-modal="clothesModal">Hygiene tips →</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKIN HEALTH -->
+        <section class="section skin-section" id="skin">
+            <div class="container skin-layout">
+                <div class="skin-photo-wrap">
+                    <img class="skin-photo"
+                        src="https://images.unsplash.com/photo-1556229010-6c3f2c9ca5f8?auto=format&fit=crop&w=1200&q=85"
+                        alt="Gentle skincare products arranged on a clean surface" loading="lazy">
+                    <div class="skin-photo-caption">
+                        <span>✦</span>
+                        <div>
+                            <strong>Gentle care, every day</strong>
+                            <small>Keep your routine simple and consistent.</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skin-content">
+                    <span class="section-label">SKIN HEALTH & HYGIENE</span>
+                    <h2>Healthy skin starts with <span>simple care.</span></h2>
+                    <p class="skin-intro">
+                        Your skin helps protect your body. A gentle, consistent routine
+                        can support its protective barrier. Choose products that suit
+                        your skin, avoid harsh scrubbing, and seek medical advice for
+                        persistent skin concerns.
+                    </p>
+
+                    <div class="skin-tabs" role="tablist" aria-label="Skin-care routine">
+                        <button class="skin-tab active" id="skinMorningTab" type="button"
+                            role="tab" aria-selected="true" aria-controls="skinRoutinePanel"
+                            data-skin-routine="morning">Morning</button>
+                        <button class="skin-tab" id="skinEveningTab" type="button"
+                            role="tab" aria-selected="false" aria-controls="skinRoutinePanel"
+                            data-skin-routine="evening">Evening</button>
+                        <button class="skin-tab" id="skinSensitiveTab" type="button"
+                            role="tab" aria-selected="false" aria-controls="skinRoutinePanel"
+                            data-skin-routine="sensitive">Sensitive skin</button>
+                    </div>
+
+                    <div class="skin-routine-panel" id="skinRoutinePanel" role="tabpanel"
+                        aria-labelledby="skinMorningTab" aria-live="polite">
+                        <div class="skin-step">
+                            <span>1</span>
+                            <div>
+                                <h3>Cleanse gently</h3>
+                                <p>Use a mild cleanser and lukewarm water. Avoid rough scrubbing.</p>
+                            </div>
+                        </div>
+                        <div class="skin-step">
+                            <span>2</span>
+                            <div>
+                                <h3>Moisturise</h3>
+                                <p>Choose a moisturiser that fits your skin and helps prevent dryness.</p>
+                            </div>
+                        </div>
+                        <div class="skin-step">
+                            <span>3</span>
+                            <div>
+                                <h3>Protect from the sun</h3>
+                                <p>Consider broad-spectrum SPF 30+ sunscreen and follow the label instructions.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skin-note">
+                        <strong>Skin health tip:</strong> Patch-test new products as directed.
+                        Stop using products that cause irritation. For a persistent rash,
+                        painful acne, changing mole or signs of infection, consult a
+                        qualified healthcare professional.
+                    </div>
+                    <a class="source-link" href="https://www.aad.org/public/everyday-care/skin-care-basics"
+                        target="_blank" rel="noopener noreferrer">Read dermatology guidance ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- HANDWASHING TIMER -->
+        <section class="timer-section">
+            <div class="container timer-container">
+                <div class="timer-info">
+                    <span class="section-label">TRY IT NOW</span>
+                    <h2>20-second <span>handwash timer</span></h2>
+                    <p>Practice a thorough handwashing routine with our simple interactive timer.</p>
+                    <div class="timer-tips">
+                        <div><span>1</span>Wet your hands</div>
+                        <div><span>2</span>Apply soap</div>
+                        <div><span>3</span>Scrub thoroughly</div>
+                        <div><span>4</span>Rinse & dry</div>
+                    </div>
+                </div>
+
+                <div class="timer-card">
+                    <div class="timer-circle" id="timerCircle">
+                        <div>
+                            <strong id="timerDisplay">20</strong>
+                            <small>seconds</small>
+                        </div>
+                    </div>
+                    <div class="timer-status" id="timerStatus">Ready to wash?</div>
+                    <div class="timer-actions">
+                        <button class="btn btn-primary" id="startTimer">▶ Start</button>
+                        <button class="btn timer-reset" id="resetTimer">↻ Reset</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISEASE PREVENTION -->
+        <section class="section" id="prevention">
+            <div class="container">
+                <div class="section-heading">
+                    <span>DISEASE PREVENTION</span>
+                    <h2>Reduce risks. <span>Protect yourself.</span></h2>
+                    <p>Learn practical prevention habits for common health risks.</p>
+                </div>
+
+                <div class="prevention-grid">
+                    <article class="prevention-card">
+                        <div class="prevention-icon">🫁</div>
+                        <h3>Respiratory Infections</h3>
+                        <p>Help reduce transmission by maintaining hand hygiene, improving ventilation and staying home when unwell.</p>
+                        <ul>
+                            <li>Wash hands regularly</li>
+                            <li>Cover coughs and sneezes</li>
+                            <li>Avoid close contact when sick</li>
+                        </ul>
+                    </article>
+
+                    <article class="prevention-card">
+                        <div class="prevention-icon">💧</div>
+                        <h3>Food & Water Safety</h3>
+                        <p>Safe food handling and clean drinking water are important parts of infection prevention.</p>
+                        <ul>
+                            <li>Use safe drinking water</li>
+                            <li>Wash fresh produce</li>
+                            <li>Keep raw and cooked foods separate</li>
+                        </ul>
+                    </article>
+
+                    <article class="prevention-card">
+                        <div class="prevention-icon">🦟</div>
+                        <h3>Mosquito-Borne Diseases</h3>
+                        <p>Reduce mosquito exposure and remove standing water around living areas.</p>
+                        <ul>
+                            <li>Use mosquito protection</li>
+                            <li>Wear suitable clothing</li>
+                            <li>Remove standing water</li>
+                        </ul>
+                    </article>
+
+                    <article class="prevention-card">
+                        <div class="prevention-icon">💉</div>
+                        <h3>Vaccination</h3>
+                        <p>Keep vaccinations up to date according to recommended schedules and professional advice.</p>
+                        <ul>
+                            <li>Check vaccination records</li>
+                            <li>Follow recommended schedules</li>
+                            <li>Ask a healthcare professional questions</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- DAILY HYGIENE CHECKLIST -->
+        <section class="checklist-section">
+            <div class="container">
+                <div class="section-heading">
+                    <span>DAILY CHECKLIST</span>
+                    <h2>How healthy is your <span>daily routine?</span></h2>
+                    <p>Tick the habits you completed today.</p>
+                </div>
+
+                <div class="checklist-box">
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Washed hands at important times</span>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Brushed my teeth</span>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Drank safe water</span>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Ate properly prepared food</span>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Kept my surroundings clean</span>
+                    </label>
+                    <label class="check-item">
+                        <input type="checkbox">
+                        <span class="custom-check"></span>
+                        <span>Took appropriate rest</span>
+                    </label>
+
+                    <div class="score-box">
+                        <div>
+                            <strong id="scoreNumber">0%</strong>
+                            <span>Daily hygiene score</span>
+                        </div>
+                        <div class="score-progress"><span id="scoreProgress"></span></div>
+                        <p id="scoreMessage">Start checking your habits.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCAL HEALTHCARE RESOURCES -->
+        <section class="section light-section" id="resources">
+            <div class="container">
+                <div class="section-heading">
+                    <span>LOCAL HEALTHCARE</span>
+                    <h2>Healthcare resources <span>in Nagpur</span></h2>
+                    <p>Officially listed healthcare facilities and emergency contacts for the Nagpur area.</p>
+                </div>
+
+                <div class="resource-search">
+                    <span>🔎</span>
+                    <input type="text" id="resourceSearch"
+                        placeholder="Search hospital or service..."
+                        aria-label="Search healthcare resources">
+                </div>
+
+                <div class="resources-grid" id="resourcesGrid">
+                    <article class="resource-card">
+                        <div class="resource-top">
+                            <div class="resource-icon">🏥</div>
+                            <span class="government-tag">Government</span>
+                        </div>
+                        <h3>AIIMS Nagpur</h3>
+                        <p>All India Institute of Medical Sciences, Nagpur, located in the MIHAN area.</p>
+                        <div class="resource-detail">📍 Plot No. 2, Sector-20, MIHAN, Nagpur</div>
+                        <div class="resource-detail">📞 <a href="tel:9404044944">9404044944</a></div>
+                        <div class="resource-buttons">
+                            <a href="https://aiimsnagpur.edu.in/" target="_blank" rel="noopener noreferrer" class="resource-btn">Website</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=AIIMS+Nagpur+MIHAN" target="_blank" rel="noopener noreferrer" class="resource-btn outline">Directions</a>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-top">
+                            <div class="resource-icon">🏥</div>
+                            <span class="government-tag">Government</span>
+                        </div>
+                        <h3>Government Medical College & Hospital</h3>
+                        <p>Government Medical College and Hospital at Medical Square, Nagpur.</p>
+                        <div class="resource-detail">📍 Medical Square, Nagpur</div>
+                        <div class="resource-detail">📞 <a href="tel:07122701642">0712-2701642</a></div>
+                        <div class="resource-buttons">
+                            <a href="http://www.gmcnagpur.gov.in" target="_blank" rel="noopener noreferrer" class="resource-btn">Website</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Government+Medical+College+Hospital+Nagpur" target="_blank" rel="noopener noreferrer" class="resource-btn outline">Directions</a>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-top">
+                            <div class="resource-icon">🏥</div>
+                            <span class="government-tag">Government</span>
+                        </div>
+                        <h3>Indira Gandhi Government Medical College & Hospital</h3>
+                        <p>Government medical college and hospital situated on Central Avenue Road.</p>
+                        <div class="resource-detail">📍 C.A. Road, Nagpur</div>
+                        <div class="resource-detail">📞 <a href="tel:07122725423">0712-2725423</a></div>
+                        <div class="resource-detail">🚨 Casualty: <a href="tel:07122820100">0712-2820100</a></div>
+                        <div class="resource-buttons">
+                            <a href="https://iggmc.edu.in/" target="_blank" rel="noopener noreferrer" class="resource-btn">Website</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Indira+Gandhi+Government+Medical+College+Nagpur" target="_blank" rel="noopener noreferrer" class="resource-btn outline">Directions</a>
+                        </div>
+                    </article>
+
+                    <article class="resource-card">
+                        <div class="resource-top">
+                            <div class="resource-icon">🦷</div>
+                            <span class="government-tag">Government</span>
+                        </div>
+                        <h3>Government Dental College & Hospital</h3>
+                        <p>Government dental healthcare facility at Medical College Premises, Medical Square.</p>
+                        <div class="resource-detail">📍 Medical College Premises, Medical Square</div>
+                        <div class="resource-detail">📞 <a href="tel:07122744496">0712-2744496</a></div>
+                        <div class="resource-buttons">
+                            <a href="https://www.gdchnagpur.com" target="_blank" rel="noopener noreferrer" class="resource-btn">Website</a>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Government+Dental+College+Nagpur" target="_blank" rel="noopener noreferrer" class="resource-btn outline">Directions</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="resource-note">
+                    <strong>Important:</strong> Always verify operating hours, departments and appointment requirements directly with the healthcare facility before visiting.
+                </div>
+            </div>
+        </section>
+
+        <!-- HEALTH EDUCATION -->
+        <section class="education-section">
+            <div class="container education-container">
+                <div class="education-image">
+                    <div class="education-circle">❤️</div>
+                    <div class="education-stat stat-one"><strong>Clean</strong><span>Hands</span></div>
+                    <div class="education-stat stat-two"><strong>Safe</strong><span>Water</span></div>
+                    <div class="education-stat stat-three"><strong>Healthy</strong><span>Habits</span></div>
+                </div>
+
+                <div class="education-content">
+                    <span class="section-label">HEALTH EDUCATION</span>
+                    <h2>Prevention starts with <span>knowledge.</span></h2>
+                    <p>
+                        Knowing when to wash your hands, how to handle food safely,
+                        how to reduce exposure to infections and when to seek
+                        professional care can make everyday health decisions easier.
+                    </p>
+                    <div class="education-points">
+                        <div><span>✓</span><p>Learn from trusted health organizations</p></div>
+                        <div><span>✓</span><p>Use practical habits in everyday life</p></div>
+                        <div><span>✓</span><p>Seek professional medical advice when necessary</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATIONAL VIDEOS -->
+        <section class="section video-learning-section" id="videos">
+            <div class="container">
+                <div class="section-heading">
+                    <span>WATCH & LEARN</span>
+                    <h2>Turn knowledge into <span>healthy habits.</span></h2>
+                    <p>Explore educational videos about handwashing, skin care and disease prevention.</p>
+                </div>
+
+                <div class="video-learning-grid">
+                    <article class="video-learning-card">
+                        <a class="video-thumb"
+                            href="https://www.youtube.com/results?search_query=WHO+handwashing+health+education"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Watch handwashing educational videos">
+                            <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=85"
+                                alt="Healthcare worker demonstrating hygiene" loading="lazy">
+                            <span class="play-button">▶</span>
+                        </a>
+                        <div class="video-card-content">
+                            <span class="video-tag">PERSONAL HYGIENE</span>
+                            <h3>Handwashing basics</h3>
+                            <p>Find visual demonstrations of effective handwashing and everyday hygiene.</p>
+                            <a href="https://www.youtube.com/results?search_query=WHO+handwashing+health+education" target="_blank" rel="noopener noreferrer">Watch videos ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="video-learning-card">
+                        <a class="video-thumb"
+                            href="https://www.youtube.com/results?search_query=American+Academy+of+Dermatology+basic+skin+care"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Watch skin care educational videos">
+                            <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=85"
+                                alt="Skin care treatment in a clean setting" loading="lazy">
+                            <span class="play-button">▶</span>
+                        </a>
+                        <div class="video-card-content">
+                            <span class="video-tag">SKIN HEALTH</span>
+                            <h3>Build a gentle skincare routine</h3>
+                            <p>Explore educational content about cleansing, moisturising and sun protection.</p>
+                            <a href="https://www.youtube.com/results?search_query=American+Academy+of+Dermatology+basic+skin+care" target="_blank" rel="noopener noreferrer">Watch videos ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="video-learning-card">
+                        <a class="video-thumb"
+                            href="https://www.youtube.com/results?search_query=WHO+disease+prevention+health+education"
+                            target="_blank" rel="noopener noreferrer"
+                            aria-label="Watch disease prevention educational videos">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85"
+                                alt="Healthcare professional helping a patient" loading="lazy">
+                            <span class="play-button">▶</span>
+                        </a>
+                        <div class="video-card-content">
+                            <span class="video-tag">PREVENTION</span>
+                            <h3>Reduce infection risks</h3>
+                            <p>Learn about respiratory hygiene, safe food handling and preventative habits.</p>
+                            <a href="https://www.youtube.com/results?search_query=WHO+disease+prevention+health+education" target="_blank" rel="noopener noreferrer">Watch videos ↗</a>
+                        </div>
+                    </article>
+                </div>
+                <p class="video-disclaimer">Videos open on YouTube. They are for general education and do not replace professional medical advice.</p>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="section" id="faq">
+            <div class="container">
+                <div class="section-heading">
+                    <span>FAQ</span>
+                    <h2>Frequently asked <span>questions</span></h2>
+                    <p>Simple answers to common hygiene questions.</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long should I wash my hands?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>CDC recommends scrubbing your hands with soap for at least 20 seconds when washing your hands in community settings.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>When should I wash my hands?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Important times include before preparing or eating food, after using the toilet, after coughing or sneezing, after touching garbage and when caring for someone who is sick.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Can hand sanitizer replace handwashing?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>When soap and clean running water are unavailable, an alcohol-based hand sanitizer containing at least 60% alcohol can be used. Soap and water are preferred when hands are visibly dirty.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Should this website be used for diagnosis?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>No. This website is an educational resource and does not diagnose, treat or replace advice from a qualified healthcare professional.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What should I do during a medical emergency?</span>
+                            <span class="faq-plus">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Seek emergency medical assistance immediately. In India, 112 is the national emergency number. Maharashtra also operates the 108 emergency ambulance service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TRUSTED SOURCES -->
+        <section class="sources-section">
+            <div class="container">
+                <div class="sources-box">
+                    <div>
+                        <span class="section-label">TRUSTED SOURCES</span>
+                        <h2>Learn from reliable health organizations</h2>
+                        <p>Use official health organizations for detailed, updated guidance.</p>
+                    </div>
+                    <div class="sources-links">
+                        <a href="https://www.who.int/" target="_blank" rel="noopener noreferrer">WHO ↗</a>
+                        <a href="https://www.cdc.gov/" target="_blank" rel="noopener noreferrer">CDC ↗</a>
+                        <a href="https://www.mohfw.gov.in/" target="_blank" rel="noopener noreferrer">MoHFW India ↗</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo footer-logo">
+                    <span class="logo-icon">✚</span>
+                    <span>Health<span class="logo-highlight">&</span>Hygiene</span>
+                </a>
+                <p>Simple, accessible health and hygiene information for everyday life.</p>
+            </div>
+
+            <div class="footer-links">
+                <div>
+                    <h4>Explore</h4>
+                    <a href="#hygiene">Hygiene</a>
+                    <a href="#skin">Skin Health</a>
+                    <a href="#prevention">Prevention</a>
+                    <a href="#videos">Videos</a>
+                    <a href="#resources">Healthcare</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div>
+                    <h4>Emergency</h4>
+                    <a href="tel:112">112 Emergency</a>
+                    <a href="tel:108">108 Ambulance</a>
+                </div>
+                <div>
+                    <h4>Sources</h4>
+                    <a href="https://www.who.int/" target="_blank" rel="noopener noreferrer">WHO</a>
+                    <a href="https://www.cdc.gov/" target="_blank" rel="noopener noreferrer">CDC</a>
+                    <a href="https://www.mohfw.gov.in/" target="_blank" rel="noopener noreferrer">MoHFW</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© <span id="year"></span> Health & Hygiene Hub. Educational resource only.</p>
+                <p>Built with care to foster wellness in our neighborhoods.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- HYGIENE POP-UP MODALS -->
+    <div class="modal" id="handModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon">🧼</div>
+            <h2>How to wash your hands</h2>
+            <ol class="modal-list">
+                <li><strong>Wet</strong> your hands with clean running water.</li>
+                <li><strong>Apply soap</strong> and create a good lather.</li>
+                <li><strong>Scrub</strong> palms, backs of hands, between fingers and under fingernails.</li>
+                <li><strong>Scrub for at least 20 seconds.</strong></li>
+                <li><strong>Rinse</strong> thoroughly under clean running water.</li>
+                <li><strong>Dry</strong> your hands completely.</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="modal" id="oralModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon">🪥</div>
+            <h2>Oral hygiene tips</h2>
+            <ul class="modal-list">
+                <li>Brush your teeth regularly.</li>
+                <li>Keep your toothbrush clean.</li>
+                <li>Pay attention to your gum health.</li>
+                <li>Have regular dental checkups as appropriate.</li>
+                <li>Seek professional advice for persistent dental problems.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="bodyModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon">🚿</div>
+            <h2>Daily body hygiene</h2>
+            <ul class="modal-list">
+                <li>Bathe regularly according to your needs.</li>
+                <li>Keep skin folds clean and dry.</li>
+                <li>Wear clean clothes.</li>
+                <li>Keep towels and personal items clean.</li>
+                <li>Wash hands after using the toilet.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="modal" id="clothesModal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close">&times;</button>
+            <div class="modal-icon">👕</div>
+            <h2>Clean clothing habits</h2>
+            <ul class="modal-list">
+                <li>Change sweaty or dirty clothes regularly.</li>
+                <li>Wash towels and bedding regularly.</li>
+                <li>Allow damp clothes to dry properly.</li>
+                <li>Avoid sharing personal hygiene items.</li>
+            </ul>
+        </div>
+    </div>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
